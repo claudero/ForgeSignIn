@@ -1,0 +1,27 @@
+{
+  "name": "forge-3leg.nodejs-template",
+  "version": "1.0.0",
+  "description": "Basic template for Autodesk Forge NodeJS apps with 3 legged OAuth",
+  "dependencies": {
+    "bootstrap": "*",
+    "cookie-parser": "*",
+    "express": "*",
+    "express-session": "*",
+    "forge-data-management": "*",
+    "forge-model-derivative": "*",
+    "forge-oauth2": "*",
+    "forge-oss": "*",
+    "jquery": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/augustogoncalves/forge-3leg.nodejs-template"
+  },
+  "scripts": {
+    "start" : "NODE_ENV=production node start.js",
+    "dev": "node start.js",
+    "nodemon": "nodemon start.js --ignore www/"
+  },
+  "author": "Augusto Goncalves (Forge Partner Development)",
+  "license": "MIT"
+}
