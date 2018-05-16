@@ -1,7 +1,7 @@
 {
-  "name": "forge-3leg.nodejs-template",
+  "name": "ForgeLogin",
   "version": "1.0.0",
-  "description": "Basic template for Autodesk Forge NodeJS apps with 3 legged OAuth",
+  "description": "",
   "dependencies": {
     "bootstrap": "*",
     "cookie-parser": "*",
@@ -11,7 +11,8 @@
     "forge-model-derivative": "*",
     "forge-oauth2": "*",
     "forge-oss": "*",
-    "jquery": "*"
+    "jquery": "*",
+    "request-promise": "^4.2.2"
   },
   "repository": {
     "type": "git",

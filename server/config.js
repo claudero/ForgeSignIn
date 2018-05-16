@@ -1,6 +1,6 @@
 /////////////////////////////////////////////////////////////////////
 // Copyright (c) Autodesk, Inc. All rights reserved
-// Written by Forge Partner Development 
+// Written by Forge Partner Development
 //
 // Permission to use, copy, modify, and distribute this software in
 // object code form for any purpose and without fee is hereby granted,
@@ -19,10 +19,6 @@
 'use strict'; // http://www.w3schools.com/js/js_strict.asp
 
 module.exports = {
-
-  // this this callback URL when creating your client ID and secret
-  callbackURL: process.env.FORGE_CALLBACK_URL || 'http://localhost:3000/api/forge/callback/oauth',
-
   // set enviroment variables or hard-code here
   credentials: {
     client_id: process.env.FORGE_CLIENT_ID || '<replace with your consumer key>',
@@ -30,7 +26,7 @@ module.exports = {
   },
 
   // Required scopes for your application on server-side
-  scopeInternal: 'data:read data:write data:create data:search bucket:create bucket:read bucket:update bucket:delete',
+  scopeInternal: 'code:all',
   // Required scope of the token sent to the client
   scopePublic: 'data:read',
 };

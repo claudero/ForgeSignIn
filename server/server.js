@@ -38,16 +38,10 @@ app.use(session({
 
 // prepare server routing
 app.use('/', express.static(__dirname + '/../www')); // redirect static calls
-app.use('/js', express.static(__dirname + '/../node_modules/bootstrap/dist/js')); // redirect static calls
-app.use('/js', express.static(__dirname + '/../node_modules/jquery/dist')); // redirect static calls
-app.use('/css', express.static(__dirname + '/../node_modules/bootstrap/dist/css')); // redirect static calls
-app.use('/fonts', express.static(__dirname + '/../node_modules/bootstrap/dist/fonts')); // redirect static calls
 app.set('port', process.env.PORT || 3000); // main port
 
 // prepare our API endpoint routing
-var oauth = require('./oauth');
-var myApp = require('./app');
-app.use('/', oauth); // redirect oauth API calls
+var myApp = require('./forge');
 app.use('/', myApp); // redirect our custom API calls
 
 module.exports = app;
